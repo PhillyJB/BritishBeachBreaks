@@ -8,8 +8,29 @@ body, div, h1, h2, h3, h4, h5, a, header, li {
 }
 
 
-/*------Landing page-------*/
+/*------Landing page-----*/
 #main-landingpage-image img {
     width: 100%;
-    height: 700px;
+    height: 670px;
+}
+
+#main-ladingpage-image {
+    z-index: -1;
+}
+
+/*----postcode search sections----*/
+.postcode-search{
+    position: absolute;
+    z-index: 1;
+    top: 350px;
+    left: 70px;
+}
+
+#search-form input {
+    width: 700px;
+    height: 50px;
+}
+
+#search-form button {
+    height: 50px;
 }

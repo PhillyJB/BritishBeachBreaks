@@ -17,36 +17,55 @@
 <body>
     <!--Navigation Bar-->
     <!--Feature of collapsable Navigation taken from Bootstrap 4.6-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fas fa-umbrella-beach"></i>BritishBeachBreaks</a>
+    <div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fas fa-umbrella-beach"></i>BritishBeachBreaks</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">All Beaches</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Beaches</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">All Beaches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Beaches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Header with hero image and-->
+    <div id="main-landingpage-image">
+        <img  src="assets/images/great-british-beach-2-landing-page-image.jpg"
+            alt="british-beach">
+
+        <div class="postcode-search">
+            <div>
+                <!--slogan above the postcode search bar-->
+                <h3>Discover the hidden British beach gems right here!</h3>
+            </div>
+            <div id="search-form">
+                <!--postcode search bar-->
+                <input type="text" placeholder="Enter your postcode to find beaches near you">
+                <button class="btn btn-primary" type="submit">Find!</button>
             </div>
         </div>
-    </nav>
-    <!--Header-->
-        <div id="main-landingpage-image">
-            <a href="#"><img src="assets/images/great-british-beach-1-landing-page-image.jpg" alt="british-beach"></a>
+
+        <div>
         </div>
+    </div>
     <!--Landing Image slideshow and Postcode Search-->
     <!--Google Maps Section-->
     <section></section>
