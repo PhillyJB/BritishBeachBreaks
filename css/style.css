@@ -7,7 +7,6 @@ body, div, h1, h2, h3, h4, h5, a, header, li {
     padding: 0;
 }
 
-
 /*------Landing page-----*/
 #main-landingpage-image img {
     width: 100%;
@@ -33,4 +32,11 @@ body, div, h1, h2, h3, h4, h5, a, header, li {
 
 #search-form button {
     height: 50px;
+}
+
+/*-----Google maps area-------*/
+
+#google-map {
+    height: 400px;
+    width: 100%;
 }
