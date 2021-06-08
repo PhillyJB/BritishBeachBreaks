@@ -10,7 +10,7 @@ body, div, h1, h2, h3, h4, h5, a, header, li {
 /*------Landing page-----*/
 #main-landingpage-image img {
     width: 100%;
-    height: 670px;
+    height: 620px;
 }
 
 #main-ladingpage-image {
@@ -37,6 +37,12 @@ body, div, h1, h2, h3, h4, h5, a, header, li {
 /*-----Google maps area-------*/
 
 #google-map {
-    height: 20px;
+    height: 350px;
     width: 100%;
 }
+
+/*-------beach-image-cards------*/
+ .beach-icons {
+     display: inline-block;
+ }
+

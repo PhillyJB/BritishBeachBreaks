@@ -19,7 +19,7 @@
     <!--Feature of collapsable Navigation taken from Bootstrap 4.6-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fas fa-umbrella-beach"></i>BritishBeachBreaks</a>
+            <a class="navbar-brand" href="index.html"><i class="fas fa-umbrella-beach"></i>BritishBeachBreaks</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,11 +27,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">England</a>
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="england-beaches.html">England</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ireland</a>
@@ -47,59 +47,113 @@
         </div>
     </nav>
     <div class="container-fluid">
-    <div class="row">
-        <!--contain the google map-->
-        <div class="col-6" id="google-map"></div>
-        <!--contain the descriptive information of the region-->
-        <div class="col-6">
-            <h3>.....Beaches</h3>
+        <div class="row">
+            <div class="col-6">
+                <!--contain the descriptive information of the region-->
+                <h3>....Beaches</h3>
+                <p>South West England is justly famous for its diverse and intriguing coastline. Cornwall and Devon's
+                    rugged north shores, which receive the brunt of uninterrupted Atlantic weather systems, are a mecca
+                    for surfers in the UK. Sandy beaches such as Fistral, Bude and Croyde are well-known surfing
+                    destinations, taking the pressure off dozens of other more remote, rocky and isolated spots. The
+                    creeks, lush wooded valleys and historic fishing villages of South-East Cornwall, such as Looe and
+                    Readymoney Cove, offer plentiful opportunties for safe swimming, while the sunny, palm-fringed
+                    Torbay area, in South Devon, has been dubbed the 'English Riviera'.</p>
+            </div>
+            <!--container for the google map-->
+            <div class="col-6" id="google-map"></div>
         </div>
-    </div>
 
-    <div class="row">
-        <!--contains list of all beaches in region with expandable-->
-        <div class="col"></div>
-        <div class="col"></div>
-    </div>
-</div>
+        <div class="row">
+            <!--contains list of all beaches in region with expandable-->
+            <div class="col">
+                <div class="card beach-icons" style="width: 18rem;">
+                    <img src="assets/images/great-british-beach-1-landing-page-image.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Beach #</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card beach-icons" style="width: 18rem;">
+                    <img src="assets/images/great-british-beach-1-landing-page-image.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Beach #</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card beach-icons" style="width: 18rem;">
+                    <img src="assets/images/great-british-beach-1-landing-page-image.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Beach #</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card beach-icons" style="width: 18rem;">
+                    <img src="assets/images/great-british-beach-1-landing-page-image.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Beach #</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card beach-icons" style="width: 18rem;">
+                    <img src="assets/images/great-british-beach-1-landing-page-image.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Beach #</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card beach-icons" style="width: 18rem;">
+                    <img src="assets/images/great-british-beach-1-landing-page-image.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Beach #</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
 
-    <!--Footer-->
-    <footer>
-        <div><!---footer section one--></div>
-        <div><!---footer section two--></div>
-        <div><!---footer section three--></div>
-    </footer>
+        <!--Footer-->
+        <footer>
+            <div>
+                <!---footer section one-->
+            </div>
+            <div>
+                <!---footer section two-->
+            </div>
+            <div>
+                <!---footer section three-->
+            </div>
+        </footer>
 
-    <!--Inline JS to render our Google Maps onto the page-->
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of London
-            var london = {
-                lat: 51.509865,
-                lng: -0.118092
-            };
-            // The map, centered at London
-            var googleMap = new google.maps.Map(document.getElementById("google-map"), {
-                zoom: 5,
-                center: london,
-            });
-            // The marker, positioned at London
-            var londonMarker = new google.maps.Marker({
-                position: london,
-                map: googleMap,
-                /*this value is googleMap as in the variable defined above*/
-            });
-        }
-    </script>
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
-    </script>
-    <!--API link for google maps API-->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9X7agAq1yX318IgN-NuQK132ZxFWGwaM&callback=initMap">
-    </script>
+        <!--Inline JS to render our Google Maps onto the page-->
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of London
+                var london = {
+                    lat: 51.509865,
+                    lng: -0.118092
+                };
+                // The map, centered at London
+                var googleMap = new google.maps.Map(document.getElementById("google-map"), {
+                    zoom: 5,
+                    center: london,
+                });
+                // The marker, positioned at London
+                var londonMarker = new google.maps.Marker({
+                    position: london,
+                    map: googleMap,
+                    /*this value is googleMap as in the variable defined above*/
+                });
+            }
+        </script>
+        <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+        <!--API link for google maps API-->
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9X7agAq1yX318IgN-NuQK132ZxFWGwaM&callback=initMap">
+        </script>
 </body>
 
 </html>
