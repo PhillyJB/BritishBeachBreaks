@@ -31,30 +31,74 @@
                         <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">England</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Beaches</a>
+                        <a class="nav-link" href="#">Ireland</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts</a>
+                        <a class="nav-link" href="#">Scotland</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wales</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--Header-->
-    <header class="container">
-        <img src="" alt="british-beach">
-    </header>
-    <!--Landing Image slideshow and Postcode Search-->
-    <!--Google Maps Section-->
-    <!--Images and titles of locations-->
-    <!--Footer-->
+    <div class="container-fluid">
+    <div class="row">
+        <!--contain the google map-->
+        <div class="col-6" id="google-map"></div>
+        <!--contain the descriptive information of the region-->
+        <div class="col-6">
+            <h3>.....Beaches</h3>
+        </div>
+    </div>
 
+    <div class="row">
+        <!--contains list of all beaches in region with expandable-->
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</div>
+
+    <!--Footer-->
+    <footer>
+        <div><!---footer section one--></div>
+        <div><!---footer section two--></div>
+        <div><!---footer section three--></div>
+    </footer>
+
+    <!--Inline JS to render our Google Maps onto the page-->
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of London
+            var london = {
+                lat: 51.509865,
+                lng: -0.118092
+            };
+            // The map, centered at London
+            var googleMap = new google.maps.Map(document.getElementById("google-map"), {
+                zoom: 5,
+                center: london,
+            });
+            // The marker, positioned at London
+            var londonMarker = new google.maps.Marker({
+                position: london,
+                map: googleMap,
+                /*this value is googleMap as in the variable defined above*/
+            });
+        }
+    </script>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+    <!--API link for google maps API-->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9X7agAq1yX318IgN-NuQK132ZxFWGwaM&callback=initMap">
     </script>
 </body>
 

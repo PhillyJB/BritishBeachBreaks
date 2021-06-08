@@ -37,6 +37,6 @@ body, div, h1, h2, h3, h4, h5, a, header, li {
 /*-----Google maps area-------*/
 
 #google-map {
-    height: 400px;
+    height: 20px;
     width: 100%;
 }

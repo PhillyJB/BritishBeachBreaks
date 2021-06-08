@@ -33,20 +33,23 @@
                             <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">All Beaches</a>
+                            <a class="nav-link" href="#">England</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Beaches</a>
+                            <a class="nav-link" href="#">Ireland</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacts</a>
+                            <a class="nav-link" href="#">Scotland</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Wales</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <!--Header with hero image and-->
+    <!--Header with hero image-->
     <div id="main-landingpage-image">
         <img src="assets/images/great-british-beach-2-landing-page-image.jpg" alt="british-beach">
 
@@ -56,7 +59,6 @@
                 <h3>Discover the hidden British beach gems right here!</h3>
             </div>
             <div id="search-form">
-                <!--Landing Image slideshow and Postcode Search-->
                 <!--postcode search bar-->
                 <input type="text" placeholder="Enter your postcode to find beaches near you">
                 <button class="btn btn-primary" type="submit">Find!</button>
@@ -67,30 +69,47 @@
     <!--Google Maps Section-->
     <div class="container-fluid">
         <div class="row">
-            <div></div>
-            <div class="col-8" id="google-map"></div>
-            <div></div>
+            <div class="col-3"></div>
+            <div class="col-6" id="google-map"></div>
+            <div class="col-3">
+                <h4>Select a Region:</h4>
+                <a class="btn btn-primary" href="#" role="button">England</a>
+                <a class="btn btn-primary" href="#" role="button">Ireland</a>
+                <a class="btn btn-primary" href="#" role="button">Scotland</a>
+                <a class="btn btn-primary" href="#" role="button">Wales</a>
+            </div>
         </div>
     </div>
 
-    <!--Images and titles of locations-->
-    <div></div>
+    <!--List of locations images and partial information-->
+    <div class="row"></div>
+
     <!--Footer-->
-    <footer></footer>
+    <footer>
+        <div><!---footer section one--></div>
+        <div><!---footer section two--></div>
+        <div><!---footer section three--></div>
+    </footer>
 
     <!--Inline JS to render our Google Maps onto the page-->
     <script>
+        // Initialize and add the map
         function initMap() {
+            // The location of London
+            var london = { lat: 51.509865, lng: -0.118092};
+            // The map, centered at London
             var googleMap = new google.maps.Map(document.getElementById("google-map"), {
-                zoom: 3,
-                center: {
-                    lat: 46.619261,
-                    lng: -33.134766
-                }
+                zoom: 5,
+                center: london,
+            });
+            // The marker, positioned at London
+            var londonMarker = new google.maps.Marker({
+                position: london,
+                map: googleMap,
+                /*this value is googleMap as in the variable defined above*/
             });
         }
     </script>
-
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
