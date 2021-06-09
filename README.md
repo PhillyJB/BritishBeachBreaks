@@ -18,8 +18,27 @@ BBB helps to bring to light the great offerings of British beach locations as an
 
 
 ## TECHNOLOGIES USED
+#### Languages
+HTML5 
+CSS3
+Javascript
+
+#### Frameworks and tools
+JQuery
+Bootsrap4.6
+W3schools
+
+#### Fonts and Icones
+Font awesome
+Google fonts
+
+#### APIs
+Googlemaps API – from Google Cloud
+
 
 ## TESTING
+
+*Adding the JQuery toggle feature to the Beach Icons - this caused some difficulty as in orderto isolate each individual card and not have to repeat the JS code meant I had to create a variable ans using the "this" keyword allowed for me to target relevant card text <p> element.
 
 ## DEPLOYMENT
 

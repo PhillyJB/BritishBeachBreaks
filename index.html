@@ -91,29 +91,12 @@
         <div><!---footer section three--></div>
     </footer>
 
-    <!--Inline JS to render our Google Maps onto the page-->
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of London
-            var london = { lat: 51.509865, lng: -0.118092};
-            // The map, centered at London
-            var googleMap = new google.maps.Map(document.getElementById("google-map"), {
-                zoom: 5,
-                center: london,
-            });
-            // The marker, positioned at London
-            var londonMarker = new google.maps.Marker({
-                position: london,
-                map: googleMap,
-                /*this value is googleMap as in the variable defined above*/
-            });
-        }
-    </script>
-    <script src="js/script.js"></script>
+    <!--Inline -->
+    
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
     </script>
+    <script src="js/script.js"></script>
     <!--API link for google maps API-->
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9X7agAq1yX318IgN-NuQK132ZxFWGwaM&callback=initMap">
