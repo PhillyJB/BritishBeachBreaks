@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <title>BritishBeachBreaks</title>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <!--Feature of collapsable Navigation taken from Bootstrap 4.6-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-umbrella-beach"></i>BritishBeachBreaks</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="north-england.html">North England</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="south-england.html">South England</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ireland.html">Ireland</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="scotland.html">Scotland</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wales.html">Wales</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <!--contain the descriptive information of the region-->
+                <h3>....Beaches</h3>
+                <p>South West England is justly famous for its diverse and intriguing coastline. Cornwall and Devon's
+                    rugged north shores, which receive the brunt of uninterrupted Atlantic weather systems, are a mecca
+                    for surfers in the UK. Sandy beaches such as Fistral, Bude and Croyde are well-known surfing
+                    destinations, taking the pressure off dozens of other more remote, rocky and isolated spots. The
+                    creeks, lush wooded valleys and historic fishing villages of South-East Cornwall, such as Looe and
+                    Readymoney Cove, offer plentiful opportunties for safe swimming, while the sunny, palm-fringed
+                    Torbay area, in South Devon, has been dubbed the 'English Riviera'.</p>
+            </div>
+            <!--container for the google map-->
+            <div class="col-6" id="google-map"></div>
+        </div>
+
+        <div class="row">
+            <!--contains list of all beaches in region with expandable information-->
+            <div class="col">
+                <div class="card beach-icons" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">#</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">#</h6>
+                        <button id="more-info-b1" class="btn btn-primary more-info" type="submit">More Info</button>
+                        <p class="card-text more-info-b1-text">Some quick example text to build on the card title and
+                            make
+                            up the bulk of
+                            the card's content.
+                        </p>
+                    </div>
+                </div>
+                <div class="card beach-icons" style="width: 18rem;">
+                    <img src="" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">#</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">#</h6>
+                        <button id="more-info-b2" class="btn btn-primary more-info" type="submit">More Info</button>
+                        <p class="card-text more-info-b2-text">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div class="card beach-icons" style="width: 18rem;">
+                    <img src="" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">#</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">#</h6>
+                        <button id="more-info-b3" class="btn btn-primary more-info" type="submit">More Info</button>
+                        <p class="card-text more-info-b3-text">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div class="card beach-icons" style="width: 18rem;">
+                    <img src="" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">#</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">#</h6>
+                        <button id="more-info-b4" class="btn btn-primary more-info" type="submit">More Info</button>
+                        <p class="card-text more-info-b4-text">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div class="card beach-icons" style="width: 18rem;">
+                    <img src="" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">#</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">#</h6>
+                        <button id="more-info-b5" class="btn btn-primary more-info" type="submit">More Info</button>
+                        <p class="card-text more-info-b5-text">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div class="card beach-icons" style="width: 18rem;">
+                    <img src="" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">#</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">#</h6>
+                        <button id="more-info-b6" class="btn btn-primary more-info" type="submit">More Info</button>
+                        <p class="card-text more-info-b6-text" id="infoshow">Some quick example text to build on the
+                            card title and make
+                            up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <div>
+                <!---footer section one-->
+            </div>
+            <div>
+                <!---footer section two-->
+            </div>
+            <div>
+                <!---footer section three-->
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+        <script src="js/script.js"></script>
+        <!--API link for google maps API-->
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9X7agAq1yX318IgN-NuQK132ZxFWGwaM&callback=initMap">
+        </script>
+</body>
+
+</html>

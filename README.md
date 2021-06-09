@@ -9,13 +9,14 @@ BBB helps to bring to light the great offerings of British beach locations as an
 
 ### Existing Features
 
+* URLs/Links  to potential service providers in a particular destination - for example - If a user after reading a beach description feels it would be a great location to visit. There are hyperlinks to potential service providers like hotels, holiday package organisers and so on.
+
 ### Future Features
-* Beach options search display arrangement and filtering – User will be able to after providing their postcode to arrange the different beaches in order of preference. Which could include distance (closest to furthest or vice versa), alphabetically. Also other filters will be added like the ability to only display Sand or pebble beaches, Nudist or None nudist beaches etc.
+* User will be able to search or narrow their beach search selection using their postcode in an input field. User will be able to after providing their postcode, arrange the different beaches in order of preference. Which could include distance (closest to furthest or vice versa), alphabetically as well as specific region of the UK . Also other filters will be added like the ability to only display Sand or pebble beaches, Nudist or None nudist beaches etc.
 
-* URLs to potential service providers in a particular destination - for example - If a user wants has chosen a particular beach destination then wants to find accomadation for that particular place for a vaccation then the site will link them to a sponsored provider.
+* Include Advertisment and sponsorship deals sections on each beach page which will generate income for the site. Users will be bale to see potential offers in a region of interest while reading up on the location and these paid advertisements links will take a user to the service providers page to book the deal they want.  
 
-* Increase the quantity of beaches available on the site using an adequate API and tools to display to the user.
-
+* Increase the quantity of beaches available on the site using an adequate API and tools to display to the user. Then havea top 10 rated category for each region so users can narrow down their choices of ideal beaches to choose from.
 
 ## TECHNOLOGIES USED
 #### Languages
@@ -38,7 +39,7 @@ Googlemaps API – from Google Cloud
 
 ## TESTING
 
-*Adding the JQuery toggle feature to the Beach Icons - this caused some difficulty as in orderto isolate each individual card and not have to repeat the JS code meant I had to create a variable ans using the "this" keyword allowed for me to target relevant card text <p> element.
+*Adding the JQuery toggle feature to the Beach Icons - this caused some difficulty as in orderto isolate each individual card and not have to repeat the JS code meant I had to create a variable and using the "this" keyword allowed for me to target relevant card text <p> element.
 
 ## DEPLOYMENT
 
