@@ -39,7 +39,8 @@ Googlemaps API – from Google Cloud
 
 ## TESTING
 
-*Adding the JQuery toggle feature to the Beach Icons - this caused some difficulty as in orderto isolate each individual card and not have to repeat the JS code meant I had to create a variable and using the "this" keyword allowed for me to target relevant card text <p> element.
+*Problem - Adding the JQuery toggle feature to the Beach Icons - this caused some difficulty as in orderto isolate each individual card and not have to repeat the JS code meant I had to create a variable and using the "this" keyword allowed for me to target relevant card text <p> element.
+*Solution - 
 
 *Problem - rendering the array of markers on the google maps
 *Solution - 
