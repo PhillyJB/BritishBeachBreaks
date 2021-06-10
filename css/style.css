@@ -8,30 +8,14 @@ body, div, h1, h2, h3, h4, h5, a, header, li {
 }
 
 /*------Landing page-----*/
-#main-landingpage-image img {
+#carouselExampleFade img{
     width: 100%;
-    height: 550px;
+    height: 520px;
 }
 
-#main-ladingpage-image {
-    z-index: -1;
-}
-
-/*----postcode search sections----*/
-.postcode-search{
-    position: absolute;
-    z-index: 1;
-    top: 350px;
-    left: 70px;
-}
-
-#search-form input {
-    width: 700px;
-    height: 50px;
-}
-
-#search-form button {
-    height: 50px;
+/*heading on home page and other textual information */
+#introduction-heading{
+    text-align: center;
 }
 
 /*-----Google maps area-------*/

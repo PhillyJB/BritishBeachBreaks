@@ -22,26 +22,28 @@ function initMap() {
         {lat: 50.0799, lng: -5.6962},
         {lat: 51.5323, lng: 0.8038},
         {lat: 51.6182, lng: -4.9041},
-        {lat: 53.085936151543756, lng: -4.337059164103376},
-        {lat: 53.350816567047055, lng: -3.3727443639037658},
-        {lat: 51.5724505276232, lng: -4.289889844106617},
-        {lat: 53.32563501153239, lng: -3.4880894450089586},
-        {lat: 53.36022879544812, lng: -4.262260825074323},
-        {lat: 56.05389858827605, lng: -3.2864015726215925},
-        {lat: 57.83974270651248, lng: -7.015167169132039},
-        {lat: 57.86450201819079, lng: -6.9805455303918915},
-        {lat: 57.995283330376914, lng: -7.09417927521854},
-        {lat: 57.89356178394004, lng: -6.95357077754699},
-        {lat: 56.063983930161996, lng: -2.7800028306337743},
-        {lat: 55.16793151052298, lng: -6.786291489291372},
-        {lat: 54.898825164451374, lng: -5.858349850268546},
-        {lat: 53.979874938119345, lng: -6.1528121442297214},
-        {lat: 55.167872963031996, lng: -6.818057226149349},
-        {lat: 55.17033731804413, lng: -6.737478382371597},
-        {lat: 54.241349843119835, lng: -5.8315311850807925}
+        {lat: 53.0859, lng: -4.3370},
+        {lat: 53.3508, lng: -3.3727},
+        {lat: 51.5724, lng: -4.2898},
+        {lat: 53.3256, lng: -3.4880},
+        {lat: 53.3602, lng: -4.2622},
+        {lat: 56.0538, lng: -3.2864},
+        {lat: 57.8397, lng: -7.0151},
+        {lat: 57.8645, lng: -6.9805},
+        {lat: 57.9952, lng: -7.0941},
+        {lat: 57.8935, lng: -6.9535},
+        {lat: 56.0639, lng: -2.7800},
+        {lat: 55.1679, lng: -6.7862},
+        {lat: 54.8988, lng: -5.8583},
+        {lat: 53.9798, lng: -6.1528},
+        {lat: 55.1678, lng: -6.8180},
+        {lat: 55.1703, lng: -6.7374},
+        {lat: 54.2413, lng: -5.8315}
 
     ];
    
+    /*Coordinations in locations array above are in order of - north-eng, south-eng, wales, scotland, ireland respectively with each one having 6 locations */
+
     var markers = locations.map(function(location, i) {
         return new google.maps.Marker({
             position: location,
@@ -54,7 +56,18 @@ function initMap() {
 
 //JS to hide and toggle on beach information
 $(".card-text").hide();
+
 $(".more-info").click(function(){
     let onlyToggleThisText = "." + this.id + "-text";
     $(onlyToggleThisText).slideToggle();
+
+    let $this = $(this);
+    $this.toggleClass("more-info");
+    if($this.hasClass("more-info")){
+        $this.text("More Info");
+    } else {
+        $this.text("Less Info");
+    }
 });
+
+//});
