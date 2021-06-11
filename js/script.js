@@ -42,7 +42,7 @@ function initMap() {
 
     ];
    
-    /*Coordinations in locations array above are in order of - north-eng, south-eng, wales, scotland, ireland respectively with each one having 6 locations */
+    /*Coordinations in locations array above are in order of top to bottom- north-eng, south-eng, wales, scotland, ireland respectively with each one having 6 locations */
 
     var markers = locations.map(function(location, i) {
         return new google.maps.Marker({
@@ -56,11 +56,13 @@ function initMap() {
 
 //JS to hide beach information
 $(".card-text").hide();
+
 //JS to toggle beach information via the "more info" button
 $(".more-info").click(function(){
     let onlyToggleThisText = "." + this.id + "-text";
     $(onlyToggleThisText).slideToggle();
-
+    
+    //if-else statement to change the wording within the button from "more info" to "less info" vice versa
     let $this = $(this);
     $this.toggleClass("more-info");
     if($this.hasClass("more-info")){

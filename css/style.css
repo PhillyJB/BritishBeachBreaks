@@ -1,7 +1,7 @@
 /*----Fonts----*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
 
-/*default parameters
+/*default parameters*/
 body,
 div,
 h1,
@@ -14,12 +14,12 @@ header,
 li {
     margin: 0;
     padding: 0;
-}*/
+}
 
 /*------Landing page-----*/
 #carouselExampleFade img {
     width: 100%;
-    height: 520px;
+    height: 450px;
 }
 
 /*heading on home page and other textual information */
@@ -29,25 +29,29 @@ li {
 
 /*select regions icons on homepage @media query used to change the format of heading and <a> tags at a medium or less screen sizes*/
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .regions-icons h4 {
         text-align: center;
     }
 
-    .region-anchors{
+    .region-anchors {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
         width: 100%;
-        overflow: auto;    
+        overflow: auto;
+        margin-top: 15px;
+        margin-bottom: 20px;
     }
-
-    .region-anchors a {
-        float: left;
-        width: 18%;
-        margin: 9px;
-    }
-
 }
 
 @media (max-width: 767.98px) {
+
+    .regions-icons h4 {
+        text-align: center;
+    }
+
     .regions-icons a {
         display: block;
         width: 40%;
@@ -55,10 +59,6 @@ li {
         margin-right: auto;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
-    }
-
-    .regions-icons h4 {
-        text-align: center;
     }
 }
 
@@ -70,17 +70,39 @@ li {
 }
 
 /*-------beach-image-cards------*/
-.beach-icons {
-    display: inline-block;
+
+@media (min-width: 768px) {
+
+    .beach-cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .beach-icons {
+        display: inline-block;
+    }
 }
+
+@media (max-width: 767.98px){
+    .beach-cards-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+
 
 /*------------Footer------------*/
 .footer-sections {
-    background-color: rgba(128, 128, 128, 1.0);
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 .footer-sections a,
-.footer-sections li, .footer-sections h5 {
+.footer-sections li,
+.footer-sections h5 {
     text-decoration: none;
     list-style-type: none;
     margin-left: 0;
