@@ -17,6 +17,16 @@ body, div, h1, h2, h3, h4, h5, a, header, li {
 #introduction-heading{
     text-align: center;
 }
+/*regions icones on homepage*/
+
+.regions-icons div {
+    margin: auto;
+}
+
+.regions-icons a{
+    display: inline-block;
+    margin: auto;
+}
 
 /*-----Google maps area-------*/
 
@@ -30,3 +40,23 @@ body, div, h1, h2, h3, h4, h5, a, header, li {
      display: inline-block;
  }
 
+/*------------Footer------------*/
+.footer-sections{
+    background-color: grey;
+}
+.footer-sections a, .footer-sections li {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 0;
+    color: white
+}
+
+.footer-sections ul{
+    padding-left: 0;
+}
+
+.socials-links li{
+    display: inline-block;
+    padding-left: 0.5rem;
+    font-size: xx-large;
+}

@@ -54,9 +54,9 @@ function initMap() {
     var markerCluster = new MarkerClusterer(map, markers, { imagePath:'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 }
 
-//JS to hide and toggle on beach information
+//JS to hide beach information
 $(".card-text").hide();
-
+//JS to toggle beach information via the "more info" button
 $(".more-info").click(function(){
     let onlyToggleThisText = "." + this.id + "-text";
     $(onlyToggleThisText).slideToggle();
@@ -70,4 +70,10 @@ $(".more-info").click(function(){
     }
 });
 
-//});
+//JS to change apperance of region button on homepage during hover
+$(".btn-primary").mouseenter(function(){
+    $(this).css("background-color", "red");
+});
+$(".btn-primary").mouseleave(function(){
+    $(this).css("background-color", "#0275d8");
+});
