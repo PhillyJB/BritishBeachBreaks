@@ -2,60 +2,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
 
 /*default parameters*/
-body, div, h1, h2, h3, h4, h5, a, header, li {
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+header,
+li {
     margin: 0;
     padding: 0;
 }
 
 /*------Landing page-----*/
-#carouselExampleFade img{
+#carouselExampleFade img {
     width: 100%;
     height: 520px;
 }
 
 /*heading on home page and other textual information */
-#introduction-heading{
+#introduction-heading {
     text-align: center;
 }
+
 /*regions icones on homepage*/
 
-.regions-icons div {
-    margin: auto;
+@media (max-width: 768px) {
+    .regions-icons h4 {
+        text-align: center;
+    }
 }
 
-.regions-icons a{
-    display: inline-block;
-    margin: auto;
+@media (max-width: 768px) {
+    .regions-icons a {
+        display: block;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
 }
 
 /*-----Google maps area-------*/
 
 #google-map {
-    height: 350px;
+    height: 400px;
     width: 100%;
 }
 
 /*-------beach-image-cards------*/
- .beach-icons {
-     display: inline-block;
- }
+.beach-icons {
+    display: inline-block;
+}
 
 /*------------Footer------------*/
-.footer-sections{
+.footer-sections {
     background-color: grey;
 }
-.footer-sections a, .footer-sections li {
+
+.footer-sections a,
+.footer-sections li {
     text-decoration: none;
     list-style-type: none;
     margin-left: 0;
     color: white
 }
 
-.footer-sections ul{
+.footer-sections ul {
     padding-left: 0;
 }
 
-.socials-links li{
+.socials-links li {
     display: inline-block;
     padding-left: 0.5rem;
     font-size: xx-large;
