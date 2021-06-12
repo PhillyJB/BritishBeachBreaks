@@ -90,6 +90,10 @@ li {
     height: 250px;
 }
 
+.card-body button {
+    margin-top: 10px;
+}
+
 /*beach-image-cards - in specific @media queries breakpoints the following are reuired:...*/
 
 @media (min-width: 768px) {
