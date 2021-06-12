@@ -23,9 +23,23 @@ li {
 }
 
 /*heading on home page and other textual information */
-#introduction-heading {
+
+#introduction-heading, #total-beach-count-h4 {
     text-align: center;
 }
+
+#beach-total-count{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+#beach-total-count a {
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
 
 /*select regions icons on homepage @media query used to change the format of heading and <a> tags at a medium or less screen sizes*/
 
@@ -69,7 +83,14 @@ li {
     width: 100%;
 }
 
-/*-------beach-image-cards------*/
+/*-------beach-image-cards - general requirements------*/
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+}
+
+/*beach-image-cards - in specific @media queries breakpoints the following are reuired:...*/
 
 @media (min-width: 768px) {
 
@@ -82,18 +103,31 @@ li {
 
     .beach-icons {
         display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
 @media (max-width: 767.98px){
+
+    .card-img-top {
+        width: 100%;
+        height: 250px;
+    }
+
     .beach-cards-container{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
+
+    .beach-icons {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-
-
 
 /*------------Footer------------*/
 .footer-sections {
