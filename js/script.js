@@ -79,3 +79,7 @@ $(".btn-primary").mouseenter(function(){
 $(".btn-primary").mouseleave(function(){
     $(this).css("background-color", "#0275d8");
 });
+
+function myFunction() {
+    alert("Your Message has been submitted. Thank You");
+  }

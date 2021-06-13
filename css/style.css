@@ -149,8 +149,23 @@ li {
     }
 }
 
+/*------Contact Us Form-----*/
+.contact-us-form {
+    margin-left: 50px;
+}
+
+.submit-contact-form {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.form-group {
+    width: 75%;
+}
+
 /*------------Footer------------*/
-.footer-row{
+.footer-row {
     margin-top: 25px;
 }
 
