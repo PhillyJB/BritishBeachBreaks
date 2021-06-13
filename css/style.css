@@ -20,26 +20,42 @@ li {
 #carouselExampleFade img {
     width: 100%;
     height: 450px;
+    margin-bottom: 10px;
 }
 
 /*heading on home page and other textual information */
 
-#introduction-heading, #total-beach-count-h4 {
+#introduction-heading {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-#beach-total-count{
+#total-beach-count {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-flow: row;
     flex-wrap: nowrap;
+    justify-content: center;
+    
+    margin-bottom: 10px;
 }
 
-#beach-total-count a {
-    margin-top: 2px;
-    margin-bottom: 5px;
+#total-beach-count a {
+    margin-left: 10px;
 }
 
+
+
+
+/*-----introductory area headings, maps and paragraph on each region page -----*/
+
+.region-intro-and-map{
+    margin: 20px;
+}
+.region-intro-text {
+    font-size: large;
+    margin-top: 10px;
+}
 
 /*select regions icons on homepage @media query used to change the format of heading and <a> tags at a medium or less screen sizes*/
 
@@ -134,8 +150,13 @@ li {
 }
 
 /*------------Footer------------*/
+.footer-row{
+    margin-top: 25px;
+}
+
 .footer-sections {
     background-color: rgba(128, 128, 128, 0.5);
+    padding: 20px;
 }
 
 .footer-sections a,
