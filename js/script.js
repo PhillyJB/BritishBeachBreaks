@@ -80,6 +80,6 @@ $(".btn-primary").mouseleave(function(){
     $(this).css("background-color", "#0275d8");
 });
 
-function myFunction() {
+$("#submit-alert").click(function(){
     alert("Your Message has been submitted. Thank You");
-  }
+});
