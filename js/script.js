@@ -1,4 +1,4 @@
-//Google maps JS to render our Google Maps onto the page:
+//Google maps JS to render our Google Maps onto the homepage - index.html page:
 // Initialize and add the map
 function initMap() {
     var map = new google.maps.Map(document.getElementById("google-map"), {
@@ -15,24 +15,28 @@ function initMap() {
         {lat: 54.4903, lng: -3.6062},
         {lat: 53.3723, lng: -3.1902},
         {lat: 54.4911, lng: -0.6162},
+
         {lat: 50.8190, lng: -0.1346},
         {lat: 50.9332, lng: 0.7960},
         {lat: 50.7842, lng: -1.3547},
         {lat: 50.6877, lng: -1.9380},
         {lat: 50.0799, lng: -5.6962},
         {lat: 51.5323, lng: 0.8038},
+
         {lat: 51.6182, lng: -4.9041},
         {lat: 53.0859, lng: -4.3370},
         {lat: 53.3508, lng: -3.3727},
         {lat: 51.5724, lng: -4.2898},
         {lat: 53.3256, lng: -3.4880},
         {lat: 53.3602, lng: -4.2622},
+
         {lat: 56.0538, lng: -3.2864},
         {lat: 57.8397, lng: -7.0151},
         {lat: 57.8645, lng: -6.9805},
         {lat: 57.9952, lng: -7.0941},
         {lat: 57.8935, lng: -6.9535},
         {lat: 56.0639, lng: -2.7800},
+
         {lat: 55.1679, lng: -6.7862},
         {lat: 54.8988, lng: -5.8583},
         {lat: 53.9798, lng: -6.1528},
@@ -52,6 +56,148 @@ function initMap() {
     });
 
     var markerCluster = new MarkerClusterer(map, markers, { imagePath:'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+}
+
+
+//function to render map on the nort-england.html page
+function northMap(){
+    var map = new google.maps.Map(document.getElementById("google-map-north"), {
+        zoom: 6,
+        center: { lat: 54.4697, lng: -5.0689}
+    });
+
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    var locations = [ 
+        {lat: 55.6069, lng: -1.6944},
+        {lat: 53.7875, lng: -3.0533},
+        {lat: 53.5639, lng: -3.1003},
+        {lat: 54.4903, lng: -3.6062},
+        {lat: 53.3723, lng: -3.1902},
+        {lat: 54.4911, lng: -0.6162},
+    ];
+    var markers = locations.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    });
+
+    var markerCluster = new MarkerClusterer(map, markers, { imagePath:'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+}
+//function to render map on the south-england.html page with the relevant coordinates
+function southMap(){
+    var map = new google.maps.Map(document.getElementById("google-map-south"), {
+        zoom: 6,
+        center: { lat: 51.4600, lng: -2.5859}
+    });
+
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    var locations = [ 
+        {lat: 50.8190, lng: -0.1346},
+        {lat: 50.9332, lng: 0.7960},
+        {lat: 50.7842, lng: -1.3547},
+        {lat: 50.6877, lng: -1.9380},
+        {lat: 50.0799, lng: -5.6962},
+        {lat: 51.5323, lng: 0.8038},
+    ];
+    var markers = locations.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    });
+
+    var markerCluster = new MarkerClusterer(map, markers, { imagePath:'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+}
+
+//function to render map on the wales.html page
+function walesMap(){
+    var map = new google.maps.Map(document.getElementById("google-map-wales"), {
+        zoom: 6,
+        center: { lat: 51.4600, lng: -2.5859}
+    });
+
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    var locations = [ 
+        {lat: 51.6182, lng: -4.9041},
+        {lat: 53.0859, lng: -4.3370},
+        {lat: 53.3508, lng: -3.3727},
+        {lat: 51.5724, lng: -4.2898},
+        {lat: 53.3256, lng: -3.4880},
+        {lat: 53.3602, lng: -4.2622},
+    ];
+    var markers = locations.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    });
+
+    var markerCluster = new MarkerClusterer(map, markers, { imagePath:'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+}
+
+//function to render map on the scotland.html page
+function scotMap(){
+    var map = new google.maps.Map(document.getElementById("google-map-scot"), {
+        zoom: 6,
+        center: { lat: 56.9735, lng: -4.1574}
+    });
+
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    var locations = [ 
+        {lat: 56.0538, lng: -3.2864},
+        {lat: 57.8397, lng: -7.0151},
+        {lat: 57.8645, lng: -6.9805},
+        {lat: 57.9952, lng: -7.0941},
+        {lat: 57.8935, lng: -6.9535},
+        {lat: 56.0639, lng: -2.7800},
+    ];
+    var markers = locations.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    });
+
+    var markerCluster = new MarkerClusterer(map, markers, { imagePath:'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+}
+
+//function to render map on the ireland.html page
+function irelMap(){
+
+    var map = new google.maps.Map(document.getElementById("google-map-irel"), {
+        zoom: 6,
+        center: { lat: 54.5562, lng: -5.9407}
+    });
+
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    var locations = [ 
+        {lat: 55.1679, lng: -6.7862},
+        {lat: 54.8988, lng: -5.8583},
+        {lat: 53.9798, lng: -6.1528},
+        {lat: 55.1678, lng: -6.8180},
+        {lat: 55.1703, lng: -6.7374},
+        {lat: 54.2413, lng: -5.8315},
+    ];
+
+    var markers = locations.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    });
+
+    var markerCluster = new MarkerClusterer(map, markers, { imagePath:'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
 }
 
 //JS to hide beach information
@@ -80,6 +226,8 @@ $(".btn-primary").mouseleave(function(){
     $(this).css("background-color", "#0275d8");
 });
 
+
+//to have alert message pop after user clicks send! on the contact us form.
 $("#submit-alert").click(function(){
     alert("Your Message has been submitted. Thank You");
 });
