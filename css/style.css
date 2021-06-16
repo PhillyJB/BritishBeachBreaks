@@ -97,11 +97,13 @@ li {
 #google-map {
     height: 400px;
     width: 100%;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.40);
 }
 
 #google-map-north, #google-map-south, #google-map-wales, #google-map-scot, #google-map-irel {
     height: 350px;
     width: 100%;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.40);
 }
 
 /*-------beach-image-cards - general requirements------*/
@@ -113,6 +115,10 @@ li {
 
 .card-body button {
     margin-top: 10px;
+}
+
+.beach-icons img, .beach-icons .card-body {
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.40);
 }
 
 /*beach-image-cards - in specific @media queries breakpoints the following are reuired:...*/
