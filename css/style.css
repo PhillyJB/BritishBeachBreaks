@@ -99,6 +99,11 @@ li {
     width: 100%;
 }
 
+#google-map-north, #google-map-south, #google-map-wales, #google-map-scot, #google-map-irel {
+    height: 350px;
+    width: 100%;
+}
+
 /*-------beach-image-cards - general requirements------*/
 
 .card-img-top {
