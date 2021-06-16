@@ -226,7 +226,6 @@ $(".btn-primary").mouseleave(function(){
     $(this).css("background-color", "#0275d8");
 });
 
-
 //to have alert message pop after user clicks send! on the contact us form.
 $("#submit-alert").click(function(){
     alert("Your Message has been submitted. Thank You");
