@@ -117,7 +117,7 @@ li {
     margin-top: 10px;
 }
 
-.beach-icons img, .beach-icons .card-body {
+.beach-icons .card-body, .beach-icons img {
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.40);
 }
 
