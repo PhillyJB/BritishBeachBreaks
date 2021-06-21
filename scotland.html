@@ -49,9 +49,10 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid" style="padding: 0%;">
-        <div class="row region-intro-and-map">
-            <div class="col-12 col-md-6">
+    <!--Region Intro and Map-->
+    <div class="container-fluid">
+        <div class="row region-intro-area">
+            <div class="col">
                 <!--contain the descriptive information of the region-->
                 <h3>Scotland beaches</h3>
                 <p class="region-intro-text">
@@ -62,9 +63,12 @@
                 </p>
             </div>
             <!--container for the google map-->
-            <div class="col-12 col-md-6" id="google-map-scot"></div>
         </div>
-
+        <div class="row region-map-area">
+            <div class="col" id="google-map-scot"></div>
+        </div>
+    </div>
+    <!--beach card icons sections-->
         <div class="row">
             <!--contains list of all beaches in region with expandable information-->
             <div class="col beach-cards-container">
@@ -284,8 +288,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
     <!--Footer-->
     <footer class="container-fluid">
         <div class="row footer-row">
@@ -314,7 +316,8 @@
             </div>
         </div>
         <!--copyright tag-->
-        <div class="row footer-row">
+        <div class="row footer-row" style="
+        padding-right: 0px;">
             <div class="col copyright-information footer-sections">
                 <p>© 2021, Philip J. Buuza, All rights reserved.</p>
             </div>

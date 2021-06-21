@@ -64,7 +64,7 @@ function initMap() {
 //function to render map on the nort-england.html page
 function northMap(){
     var map = new google.maps.Map(document.getElementById("google-map-north"), {
-        zoom: 6,
+        zoom: 6.5,
         center: { lat: 54.4697, lng: -5.0689}
     });
 
@@ -91,7 +91,7 @@ function northMap(){
 //function to render map on the south-england.html page with the relevant coordinates
 function southMap(){
     var map = new google.maps.Map(document.getElementById("google-map-south"), {
-        zoom: 6,
+        zoom: 6.5,
         center: { lat: 51.4600, lng: -2.5859}
     });
 
@@ -147,7 +147,7 @@ function walesMap(){
 //function to render map on the scotland.html page
 function scotMap(){
     var map = new google.maps.Map(document.getElementById("google-map-scot"), {
-        zoom: 6,
+        zoom: 6.5,
         center: { lat: 56.9735, lng: -4.1574}
     });
 
@@ -175,7 +175,7 @@ function scotMap(){
 function irelMap(){
 
     var map = new google.maps.Map(document.getElementById("google-map-irel"), {
-        zoom: 6,
+        zoom: 6.5,
         center: { lat: 54.5562, lng: -5.9407}
     });
 

@@ -16,6 +16,10 @@ li {
     padding: 0;
 }
 
+body {
+    font-family: Roboto, San sans-serif;
+}
+
 /*------Landing page-----*/
 #homepage-carousel img {
     width: 100%;
@@ -28,7 +32,7 @@ li {
 #introduction-heading {
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #total-beach-count {
@@ -36,22 +40,28 @@ li {
     flex-flow: row;
     flex-wrap: nowrap;
     justify-content: center;
-    
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #total-beach-count a {
     margin-left: 10px;
 }
 
-
+.region-intro-area h3, .region-intro-area p {
+    text-align: center;
+}
 
 
 /*-----introductory area headings, maps and paragraph on each region page -----*/
 
-.region-intro-and-map{
-    margin: 20px;
+.region-intro-area, .region-map-area{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
 }
+
 .region-intro-text {
     font-size: large;
     margin-top: 10px;
@@ -74,6 +84,10 @@ li {
         margin-top: 15px;
         margin-bottom: 20px;
     }
+
+    .select-region-row {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -89,6 +103,10 @@ li {
         margin-right: auto;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
+    }
+
+    .select-region-row {
+        margin-bottom: 20px;
     }
 }
 
@@ -121,6 +139,10 @@ li {
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.40);
 }
 
+.beach-icons p {
+    font-size: 15px;
+}
+
 /*beach-image-cards - in specific @media queries breakpoints the following are reuired:...*/
 
 @media (min-width: 768px) {
@@ -136,6 +158,7 @@ li {
         display: inline-block;
         margin-top: 30px;
         margin-bottom: 30px;
+        border: none;
     }
 }
 
@@ -157,10 +180,12 @@ li {
         margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
+        border: none;
     }
 }
 
 /*------Contact Us Form-----*/
+
 .contact-us-form {
     margin-left: 50px;
 }
@@ -169,6 +194,7 @@ li {
     display: flex;
     flex-flow: row;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .form-group {
@@ -184,7 +210,8 @@ li {
 
 .footer-sections {
     padding-top: 10px;
-    font-size: 15px;
+    font-size: 12px;
+    padding-bottom: 0%;
 }
 
 .footer-sections a,
