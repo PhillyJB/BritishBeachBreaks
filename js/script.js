@@ -1,9 +1,6 @@
 //Google maps JS to render our Google Maps onto the homepage - index.html page:
 // Initialize and add the map
 
-//home page carousel activation
-$('.carousel').carousel();
-
 function initMap() {
     var map = new google.maps.Map(document.getElementById("google-map"), {
         zoom: 4.8,
