@@ -177,12 +177,14 @@ li {
 
 /*------------Footer------------*/
 .footer-row {
-    margin-top: 25px;
+    background-color: rgba(128, 128, 128, 0.5);
+    text-align: center;
+    margin-top: 0%;
 }
 
 .footer-sections {
-    background-color: rgba(128, 128, 128, 0.5);
-    padding: 20px;
+    padding-top: 10px;
+    font-size: 15px;
 }
 
 .footer-sections a,
@@ -201,5 +203,5 @@ li {
 .socials-links li {
     display: inline-block;
     padding-left: 0.5rem;
-    font-size: xx-large;
+    font-size: large;
 }
