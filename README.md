@@ -245,7 +245,12 @@ Project was developed using gitpod and was regularly commited to git and pushed 
 * Information on regions and Individual beaches
     Majority of textual Information used in each Beach card has been taken from [thebeachguide.co.uk](https://www.thebeachguide.co.uk/) for the beach descriptions. Please bear in mind if the website was going live for actual use a lot of the information used would have to be replaced to avoid any copyright infringements. We are using the textual information just for formatting purposes and to demonstrate features of the site. In actual release original information and data would be used.
 
+* Information on region pages taken from:
+    * North England - [Nationaltrust](https://www.nationaltrust.org.uk/lists/beautiful-beaches-in-the-north-of-england)
+    * South England - [Visit South England](https://www.visitsoutheastengland.com/south-coast)
+    * Ireland - [cntraveller](https://www.cntraveller.com/gallery/top-beaches-in-ireland)
+    * Scotland - [visitscotland](https://www.visitscotland.com/see-do/landscapes-nature/beaches/)
+    * Wales - [visitwales](https://www.visitwales.com/things-do/nature-landscapes/beaches)
+
 * Booking Agencies
     Some Booking agencies or links to websites are to genuine website to demonstrate functionality and site features – however there is no formal partnership and recommendation been obtained from these service providers.
-
-
