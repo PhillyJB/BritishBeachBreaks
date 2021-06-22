@@ -109,13 +109,14 @@ markerclusterer/m
 * **3-Problem** - changing the “More Info” button to “Less Info” button on clicking and vice versa is causing an issue. I am able to change the status to “less info” on clicking but then it remains as “less info”
 * **3-solution** – I had an idea to use an if-else statement but was not completely sure on how to incorporate this. I went onto stack overflow which guided me with this and was able to add this feature to the buttons:
 
-let $this = $(this);
+
+```let $this = $(this);
     $this.toggleClass("more-info");
     if($this.hasClass("more-info")){
         $this.text("More Info");
     } else {
         $this.text("Less Info");
-    }
+    }```
 
 
 * **4-Problem** – Difficulty getting the carousel to work – the image remains on the “active” image on the landing page and does not allow for transition through the image items I have added.
@@ -129,9 +130,11 @@ This link was obtained from a [stack overflow interaction](https://stackoverflow
 Along with some other links but all seem to not have solved this problem. To rule out other issues further I have gone on to a competitors website to see if their carousel is working and as it seems there one is working fine which rules out me thinking it was a Google chrome issue. However this could still be a Google chrome compatibility issue with the bootstrap4 carousel I am using.
 **Carousel Bug Finally fixed** – It seems that I had to add the js CDN script from bootstrap to my index.html document for the carousel to work. 
 
+```
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
+```
 
 I read through the bootstrap documentation again carefully and copied and pasted the bootstrap script. On refresh the carousel began to work.
 
@@ -146,7 +149,8 @@ function initMap() {
         center: { lat: 54.4697, lng: -5.0689}  });
 Plus change the “var map” to a new variable (for example mapNorth) as well as changing the target the div id for the map to another name like #google-map-north. However this did not work.
 The solution to this issue was to create a new function for each page and input into it the new id name for each div id on the relative region page. On top of this I then had to input only the coordinates for the markers I wanted to display respective of the region as shown below:
-function northMap(){
+
+```function northMap(){
     var map = new google.maps.Map(document.getElementById("google-map-north"), {
         zoom: 6,
         center: { lat: 54.4697, lng: -5.0689}
@@ -171,7 +175,7 @@ function northMap(){
 
     var markerCluster = new MarkerClusterer(map, markers, { imagePath:'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 
-}
+}```
 
 This manage to solve the map issue. However this code is currently long winded and will require refactoring to make insertion of new marker easier. Also an overall function with some automation should be able to take the region page and insert the necessary information without needed to write out individual functions. This is currently being looked at and could be implemented in following features.
 
