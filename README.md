@@ -116,7 +116,8 @@ markerclusterer/m
         $this.text("More Info");
     } else {
         $this.text("Less Info");
-    }```
+    }
+```
 
 
 * **4-Problem** – Difficulty getting the carousel to work – the image remains on the “active” image on the landing page and does not allow for transition through the image items I have added.
@@ -150,7 +151,8 @@ function initMap() {
 Plus change the “var map” to a new variable (for example mapNorth) as well as changing the target the div id for the map to another name like #google-map-north. However this did not work.
 The solution to this issue was to create a new function for each page and input into it the new id name for each div id on the relative region page. On top of this I then had to input only the coordinates for the markers I wanted to display respective of the region as shown below:
 
-```function northMap(){
+```
+function northMap(){
     var map = new google.maps.Map(document.getElementById("google-map-north"), {
         zoom: 6,
         center: { lat: 54.4697, lng: -5.0689}
@@ -175,7 +177,8 @@ The solution to this issue was to create a new function for each page and input 
 
     var markerCluster = new MarkerClusterer(map, markers, { imagePath:'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 
-}```
+}
+```
 
 This manage to solve the map issue. However this code is currently long winded and will require refactoring to make insertion of new marker easier. Also an overall function with some automation should be able to take the region page and insert the necessary information without needed to write out individual functions. This is currently being looked at and could be implemented in following features.
 
