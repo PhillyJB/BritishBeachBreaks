@@ -80,7 +80,7 @@ Javascript
 [Bootsrap4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 [W3schools](https://www.w3schools.com/)
 
-#### Fonts and Icones
+#### Fonts and Icons
 [Font awesome](https://fontawesome.com/)
 [Google fonts](https://fonts.google.com/)
 
@@ -125,8 +125,15 @@ let $this = $(this);
 
 
 This link was obtained from a [stack overflow interaction](https://stackoverflow.com/questions/1321878/how-to-prevent-favicon-ico-requests).
+
 Along with some other links but all seem to not have solved this problem. To rule out other issues further I have gone on to a competitors website to see if their carousel is working and as it seems there one is working fine which rules out me thinking it was a Google chrome issue. However this could still be a Google chrome compatibility issue with the bootstrap4 carousel I am using.
-Carousel Bug Finally fixed – It seems that I had to add the js CDN script from bootstrap to my index.html document for the carousel to work. I read through the bootstrap documentation again carefully and copied and pasted the bootstrap script. On refresh the carousel began to work.
+Carousel Bug Finally fixed – It seems that I had to add the js CDN script from bootstrap to my index.html document for the carousel to work. 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+I read through the bootstrap documentation again carefully and copied and pasted the bootstrap script. On refresh the carousel began to work.
 
 * 5-Problem – problem with getting the display of the region buttons on the home page to be spaced evenly as look more presentable tried several margin property tricks and spacing but nothing was working
 * 5-Solution – In the end after looking up some information using w3school and www.css/tricks/com - came to the decision to use the flex properties like flex wrap, justify content and display – flex (can be seen in the style.css file under the region icons sections.
