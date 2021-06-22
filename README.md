@@ -89,14 +89,14 @@ Googlemaps API – from [Google Cloud](https://console.cloud.google.com/)
 
 
 ## TESTING
-* 1-Problem- 
+* **1-Problem** - 
 Adding the JQuery slideToggle feature to the beach icons - this caused some difficulty as initially adding the feature to the cards by using the”.onclick” method of the “more info” button would cause all the cards to slideToggle() despite only clicking on one button.  
 
-* 1-Solution - in orderto isolate each individual card and not have to repeat the JS code meant I had to create a variable and using the "this" keyword allowed for me to target relevant card text <p> element. In addition to the use of this “this” keyword, added necessary classes to the beach card text areas and images in order to synchronise the on click actions properly.
+* **1-Solution** - in orderto isolate each individual card and not have to repeat the JS code meant I had to create a variable and using the "this" keyword allowed for me to target relevant card text <p> element. In addition to the use of this “this” keyword, added necessary classes to the beach card text areas and images in order to synchronise the on click actions properly.
 
 
-* 2-Problem - rendering the array of markers on the Google maps was not working even though I felt I had read through my code very carefully.
-* 2-Solution – Initially tried to rewrite the initMap function to look exactly like the example in the Google maps documentation but this still did not work. I then went through the code and realised was missing the “https” at front of the src URL in the script tag on the html and the:
+* **2-Problem** - rendering the array of markers on the Google maps was not working even though I felt I had read through my code very carefully.
+* **2-Solution** – Initially tried to rewrite the initMap function to look exactly like the example in the Google maps documentation but this still did not work. I then went through the code and realised was missing the “https” at front of the src URL in the script tag on the html and the:
 
 markerclusterer/markerclusterer.js"
 	
@@ -106,8 +106,8 @@ markerclusterer/m
 
   Correcting these very slight differences seemed to solve the problem for all the maps.
 
-* 3-Problem - changing the “More Info” button to “Less Info” button on clicking and vice versa is causing an issue. I am able to change the status to “less info” on clicking but then it remains as “less info”
-* 3-solution – I had an idea to use an if-else statement but was not completely sure on how to incorporate this. I went onto stack overflow which guided me with this and was able to add this feature to the buttons:
+* **3-Problem** - changing the “More Info” button to “Less Info” button on clicking and vice versa is causing an issue. I am able to change the status to “less info” on clicking but then it remains as “less info”
+* **3-solution** – I had an idea to use an if-else statement but was not completely sure on how to incorporate this. I went onto stack overflow which guided me with this and was able to add this feature to the buttons:
 
 let $this = $(this);
     $this.toggleClass("more-info");
@@ -118,8 +118,8 @@ let $this = $(this);
     }
 
 
-* 4-Problem – Difficulty getting the carousel to work – the image remains on the “active” image on the landing page and does not allow for transition through the image items I have added.
-* 4-Solution - Looking at the console in the Google DevTool inspection it seems to be a GET error 404 related to a “favicon”. I have tried to solve this doing my research and advised to add a link into the head of my html page. 
+* **4-Problem** – Difficulty getting the carousel to work – the image remains on the “active” image on the landing page and does not allow for transition through the image items I have added.
+* **4-Solution** - Looking at the console in the Google DevTool inspection it seems to be a GET error 404 related to a “favicon”. I have tried to solve this doing my research and advised to add a link into the head of my html page. 
 
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
@@ -127,7 +127,7 @@ let $this = $(this);
 This link was obtained from a [stack overflow interaction](https://stackoverflow.com/questions/1321878/how-to-prevent-favicon-ico-requests).
 
 Along with some other links but all seem to not have solved this problem. To rule out other issues further I have gone on to a competitors website to see if their carousel is working and as it seems there one is working fine which rules out me thinking it was a Google chrome issue. However this could still be a Google chrome compatibility issue with the bootstrap4 carousel I am using.
-Carousel Bug Finally fixed – It seems that I had to add the js CDN script from bootstrap to my index.html document for the carousel to work. 
+**Carousel Bug Finally fixed** – It seems that I had to add the js CDN script from bootstrap to my index.html document for the carousel to work. 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
@@ -135,11 +135,11 @@ Carousel Bug Finally fixed – It seems that I had to add the js CDN script from
 
 I read through the bootstrap documentation again carefully and copied and pasted the bootstrap script. On refresh the carousel began to work.
 
-* 5-Problem – problem with getting the display of the region buttons on the home page to be spaced evenly as look more presentable tried several margin property tricks and spacing but nothing was working
-* 5-Solution – In the end after looking up some information using w3school and www.css/tricks/com - came to the decision to use the flex properties like flex wrap, justify content and display – flex (can be seen in the style.css file under the region icons sections.
+* **5-Problem** – problem with getting the display of the region buttons on the home page to be spaced evenly as look more presentable tried several margin property tricks and spacing but nothing was working
+* **5-Solution** – In the end after looking up some information using w3school and www.css/tricks/com - came to the decision to use the flex properties like flex wrap, justify content and display – flex (can be seen in the style.css file under the region icons sections.
 
-* 6-Problem – Trying to get the individual Google maps on each page to show only the markers for beaches in that region. The function (initMap()) that is called from script tags In the URL was only able to call the map with the markers of all the beaches as on the homepage.
-* 6-Solution – Initially I tried to write a new variable within the function similar to this:
+* **6-Problem** – Trying to get the individual Google maps on each page to show only the markers for beaches in that region. The function (initMap()) that is called from script tags In the URL was only able to call the map with the markers of all the beaches as on the homepage.
+* **6-Solution** – Initially I tried to write a new variable within the function similar to this:
 function initMap() {
     var map = new google.maps.Map(document.getElementById("google-map"), {
         zoom: 4.8,
