@@ -183,7 +183,7 @@ function northMap(){
 This manage to solve the map issue. However this code is currently long winded and will require refactoring to make insertion of new marker easier. Also an overall function with some automation should be able to take the region page and insert the necessary information without needed to write out individual functions. This is currently being looked at and could be implemented in following features.
 
 #### Validating the code with W3 validator – [HTML](https://validator.w3.org/)
-Closing div tag was </div> was found to be missing for all my html pages for the main container-fluid div. This was immediately amended on all pages and the errors were clear.
+Closing div tag was found to be missing for all my html pages for the main container-fluid div. This was immediately amended on all pages and the errors were clear.
 Validator came back with all pages clear.
 
 #### Validating the code with W3 validator – [CSS](https://jigsaw.w3.org/css-validator/)
