@@ -231,3 +231,6 @@ $(".btn-primary").mouseleave(function(){
 $("#submit-alert").click(function(){
     alert("Your Message has been submitted. Thank You");
 });
+
+//copyright span year date
+$("#copyright-date").text(new Date().getFullYear());
